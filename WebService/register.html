@@ -1,0 +1,40 @@
+<html>
+<body>
+<form action="/WebService/rest/Register" method="POST">
+First Name :
+<br>
+<input type="text" name="fname" required>
+<br>
+Last Name :
+<br>
+<input type="text" name="lname" required>
+<br>
+
+Email id:
+<br>
+<input type="email" name="email" required>
+<br>
+Date of birth(YYYY-MM-DD):
+<br>
+<input type="date" name="dob" required>
+<br>
+Gender :
+<br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other<br>
+Username :
+<br>
+<input type="text" name="uname" required>
+<br>
+Passsword :
+<br>
+<input type="password" name="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<form action="/WebService/home.html" method="POST">
+<input type="submit" value="home">
+</form>
+</body>
+</html>
